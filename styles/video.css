@@ -20,7 +20,6 @@
 }
 
 .video-time {
-  font-family: Roboto, Arial;
   font-size: 12px;
   font-weight: 500;
   padding: 4px 4px;
@@ -106,14 +105,12 @@
 }
 
 .channel-tooltip-name {
-  font-family: Roboto, Arial;
   font-weight: bold;
   font-size: 16px;
   margin-bottom: 4px;
 }
 
 .channel-tooltip-subs {
-  font-family: Roboto, Arial;
   color: rgb(100, 100, 100);
   font-size: 14px;
 }
