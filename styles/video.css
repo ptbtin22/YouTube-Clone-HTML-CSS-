@@ -55,6 +55,69 @@
   row-gap: 40px;
 }
 
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.profile-picture-container {
+  display: inline-block;
+  position: relative;
+}
+
+.channel-tooltip {
+  display: flex;
+  align-items: center;
+  transition: opacity 0.25s;
+  position: absolute;
+  width: 200px;
+  padding: 12px;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  background-color: white;
+  top: 55px;
+  z-index: 300;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.profile-picture-container:hover .channel-tooltip {
+  opacity: 0.9;
+}
+
+.channel-tooltip-picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 40px;
+  margin-right: 8px;
+}
+
+.channel-tooltip-name {
+  font-family: Roboto, Arial;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.channel-tooltip-subs {
+  font-family: Roboto, Arial;
+  color: rgb(100, 100, 100);
+  font-size: 14px;
+}
+
 .video-link,
 .channel-link {
   text-decoration: none;
